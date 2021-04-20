@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: mayikt-service-impl-order
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: dell
+Implementation-Vendor-Id: com.mayikt
+Build-Jdk: 1.8.0_251
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/mayikt-meite-openfeign-parent/mayikt-service-impl/m
+ ayikt-service-impl-order
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,4 @@
+META-INF\maven\com.mayikt\mayikt-service-api-member\pom.properties
+META-INF\MANIFEST.MF
+META-INF\maven\com.mayikt\mayikt-service-api-member\pom.xml
+com\mayikt\service\member\api\MemberService.class

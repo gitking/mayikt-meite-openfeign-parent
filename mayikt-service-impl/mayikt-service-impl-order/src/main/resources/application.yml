@@ -1,0 +1,23 @@
+spring: 
+    application: 
+        name: meitemayikt-order #服务的名称,注意服务名称不能包含下划线_
+    cloud: 
+        nacos: 
+            discovery: 
+                server-addr: 10.10.12.28:8848 #nacos注册中心的地址
+        sentinel: 
+            transport: 
+                dashboard: 127.0.0.1:8718
+            eager: true
+            datasource: 
+                ds: 
+                    nacos: 
+                        server-addr: 10.10.12.28:8848 #nacos连接地址
+                        groud-id: DEFAULT_GROUP #nacos连接的分组
+                        rule-type: flow #路由存储规则
+                        data-id: meitemayikt-order-sentinel #读取配置文件的data-id
+                        data-type: json #读取培训文件类型为json
+server: 
+    port: 8090 #8080 8081 8082是会员相关的端口,8090,8091,8092是订单相关的端口
+    tomcat: 
+        max-threads: 20 #设置tomcat的线程数最大只有20个
